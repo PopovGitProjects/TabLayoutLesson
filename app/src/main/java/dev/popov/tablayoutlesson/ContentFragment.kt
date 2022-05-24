@@ -28,7 +28,7 @@ class ContentFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentContentBinding.inflate(inflater, container, false)
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
